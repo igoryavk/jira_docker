@@ -1,0 +1,11 @@
+curl -u "last85:yavkin85" -X POST \
+  -H "Content-Type: application/json" \
+  "http://10.77.150.23:8080/rest/atm/1.0/testcase" \
+  -d '{
+    "projectKey": "TEST",
+    "name": "TC-LAN-002: Проверка интерфейса LAN2",
+    "priority": "High",
+    "status": "Approved",
+    "objective": "Убедиться, что интерфейс LAN2 настроен и активен",
+    "labels": ["openwrt", "lan", "network"]
+  }'
